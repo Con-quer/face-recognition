@@ -1,0 +1,9 @@
+# 基础依赖：采集数据与实时识别都需要
+# 注意：OpenCV 5.x 的部分发行版已不包含 objdetect 模块（Haar 级联人脸检测），
+# 因此这里限制使用 4.x。
+opencv-python>=4.8,<5
+numpy>=1.24
+Pillow>=9.0
+
+# 训练与推理依赖，会一并安装 PyTorch，体积较大
+ultralytics>=8.3

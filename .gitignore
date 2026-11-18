@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.idea/
+.vscode/
+.pytest_cache/
+.ruff_cache/
+
+# 数据集与训练产物体积较大，默认不入库
+dataset/train/*/
+dataset/val/*/
+runs/
+*.pt
+*.onnx
